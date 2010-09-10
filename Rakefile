@@ -24,7 +24,6 @@ rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: gem install jeweler"
 end
 
-=begin
 require 'spec/rake/spectask'
 Spec::Rake::SpecTask.new(:spec) do |spec|
   spec.libs << 'lib' << 'spec'
@@ -50,4 +49,3 @@ Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
-=end
