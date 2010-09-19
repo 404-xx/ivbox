@@ -5,4 +5,5 @@
 .bundle
 .document
 .svn
+coverage
 pkg

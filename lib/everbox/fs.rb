@@ -156,7 +156,7 @@ module EverBox
         def remove_or_revert url, token, paths
           raise ArgumentError, "Invalid token." if token.empty?
           raise ArgumentError, "Invalid paths." if paths.empty?
-          params = {:token => token, :paths => paths}.to_json
+          params = {:token => token, :paths => paths.flatten}.to_json
           http_request url, params
         end
 

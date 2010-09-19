@@ -28,7 +28,7 @@ def http_request url, data, options = {}
     body = response.body
     data = nil
     data = JSON.parse body unless body.empty?
-    [EVERBOX_OK, data] if response.code == EVERBOX_OK
+    [response.code, data]
   rescue => e
     code = e.response.code
     body = e.response.body
