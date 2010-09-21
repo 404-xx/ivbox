@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{everbox}
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["why404"]
-  s.date = %q{2010-09-19}
+  s.date = %q{2010-09-21}
   s.description = %q{SDK written in Ruby for the EverBox(see http://www.everbox.com).}
   s.email = %q{why404@gmail.com}
   s.extra_rdoc_files = [

@@ -74,7 +74,10 @@ module EverBox
         f = File.open(source_file, "rb")
         fsize = f.stat.size
         ftime = f.mtime.utc.strftime "%Y-%m-%d %H:%M:%S UTC"
-        fmtype = MIME::Types.type_for(source_file).to_s
+
+        # detect the MIME type of a file, based on its filename extension
+        # mimetype = `file -Ib #{path}`.gsub(/\n/,"")
+        fmtype = MIME::Types.type_for(target_path)[0].content_type
 
         keys = []
         last_index = -1

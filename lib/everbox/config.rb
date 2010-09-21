@@ -32,7 +32,7 @@ else # development
   EVERBOX_ACCOUNT_SERVER = 'http://acc' + EVERBOX_DOMAIN
 end
 
-EVERBOX_FS_SERVER = 'https://fs' + EVERBOX_DOMAIN # mock-fs | fs | fs-https
+EVERBOX_FS_SERVER = 'http://fs' + EVERBOX_DOMAIN # mock-fs | fs | fs-https
 EVERBOX_LOG_SERVER = 'http://log' + EVERBOX_DOMAIN
 EVERBOX_BIZ_SERVER = 'http://biz' + EVERBOX_DOMAIN
 
